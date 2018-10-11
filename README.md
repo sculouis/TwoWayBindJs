@@ -1,2 +1,0 @@
-# TwoWayBindJs
-Created with CodeSandbox
