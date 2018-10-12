@@ -1,4 +1,6 @@
 window.data = {};
+var _ = require("underscore");
+var $ = require("jquery");
 
 //定義node和object綁定
 var defineReactive = function(obj, key, node) {
@@ -60,6 +62,7 @@ $(function() {
         name = name.trim();
         console.log(`節點名稱:${node.nodeName}`);
         console.log(`textNode nodeValue:${name}`);
+        nodes.push({ name: name, eNode: node });
         defineReactive(data, name, node);
       }
     } else {
@@ -67,11 +70,13 @@ $(function() {
       for (var i = attrs.length - 1; i >= 0; i--) {
         console.log(`屬性名稱:${attrs[i].name} -> ${attrs[i].value}`);
         if (attrs[i].name === "id") {
+          nodes.push({ name: attrs[i].value, eNode: node });
           defineReactive(data, attrs[i].value, node);
         }
       }
     }
   }
+
   //inital data
   var dataSource = {
     FormId: "FormId",

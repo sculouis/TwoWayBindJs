@@ -7,8 +7,13 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "1.12.4",
+    "underscore": "1.9.1"
+  },
   "devDependencies": {
+    "@types/jquery": "3.3.16",
+    "@types/underscore": "1.8.9",
     "parcel-bundler": "^1.6.1"
   },
   "keywords": []

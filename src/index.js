@@ -2,7 +2,7 @@ var objData = {
   FormId: "hello world!",
   FormName: "測試",
   Select1: 2,
-  Title: "測試"
+  Title: "測"
 };
 
 function Bind(options) {
