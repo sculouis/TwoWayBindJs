@@ -12,8 +12,8 @@
     "underscore": "1.9.1"
   },
   "devDependencies": {
-    "@types/jquery": "3.3.16",
-    "@types/underscore": "1.8.9",
+    "@types/jquery": "1.12.4",
+    "@types/underscore": "1.9.1",
     "parcel-bundler": "^1.6.1"
   },
   "keywords": []
